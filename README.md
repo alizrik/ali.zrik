@@ -1,2 +1,0 @@
-# ali.zrik
-Mijn website
