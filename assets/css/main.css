@@ -30,8 +30,8 @@ section, summary, time, mark, audio, video {
     background:#FCBA7F ;
   }
   .wrapper{position: absolute;
-  bottom: 60px;
-  left: 80px; 
+  bottom: 190px;
+  left: 800px; 
   background: #fff;
   max-width: 365px;
   border-radius: 15px;
