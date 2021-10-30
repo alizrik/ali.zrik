@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/air-hockey-concepts-vector.jpg" type="image/gif" sizes="16x16">
-
+		<link rel="stylesheet" herf="style.css">
 
 
 		
@@ -23,14 +23,49 @@
 
 
 		<div id="map"></div>
+		
 
 		<script
       src="=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.894844632604!2d3.8200399159106095!3d50.87014646491522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a0ac440b4507%3A0x6ef5d749cf254a63!2sSabina%20van%20Beierenlaan%2035%2C%209620%20Zottegem!5e0!3m2!1snl!2sbe!4v1634044474452!5m2!1snl!2sbe"></script>
      
     </script>
 
+<div class="wrapper">
+	<img src="images/cookies.png" alt="">
+	<div class="content"></div>
+	<header>Cookies Constant</header>
+	<p>website is using a cookies to ensure you get the best experience on our website.</p>
+	<a href="#">Learn more</a>
+
+	<div class="buttons">
+		<button class="item">I understand</button>
+	</div>
+</div>
+<script> 
+ const cookieBox = document.querySelector(".wrapper"),
+ acceptBtn= cookieBox.querySelector(".buttons button");
+
+ acceptBtn.onclick=()=>{
+console.log("Button clicked!!");
+//setting cookie for 1 month, after 1 month cookie will be expired automatically
+document.cookie ="CookieBy=CodingNepal;max age="+60*60*24*30;
+if(document.cookie){
+	//if the above cookie set
+	cookieBox.classList.add("hide"); //hide cookie box once cookie set
+} else{
+	alert("Cookie can't be set!"); //if cookie can't be set the alret an error 
+}
+
+ }
+ //let's hide  the cookie box  if cookie is set and  not expired
+ let checkCookie=document.cookie.indexOf("CookieBy=CodingNepal"); // checking our set  cookie
+ // if cookie is set the hide cookie 	bo else shoz it
+ checkCookie !=-1 ?cookieBox.classList.add("hide"):cookieBox.classList.remove("hide");
 
 
+
+
+ </script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
